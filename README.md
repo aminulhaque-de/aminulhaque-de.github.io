@@ -1,2 +1,2 @@
-# personal-profile
+# ah-personal-profile
 This repository contains my personal profile details.
