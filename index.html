@@ -1,194 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Senior Data Engineer | Portfolio</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent: #38bdf8;
-            --accent-glow: rgba(56, 189, 248, 0.1);
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Insert Name] — Senior Data Engineer</title>
+  <meta name="description" content="[Insert professional summary/bio]" />
+  <meta name="theme-color" content="#0f172a" />
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
+  <!-- Open Graph -->
+  <meta property="og:title" content="[Insert Name] — Senior Data Engineer" />
+  <meta property="og:description" content="[Insert professional summary/bio]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aminulhaque-de.github.io/personal-profile/" />
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            padding: 20px;
-        }
+  <!-- Code-themed font (Fira Code) + readable UI font (Inter). Change or self-host if preferred. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-        header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: var(--text-primary);
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .social-links a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            padding: 8px 16px;
-            border: 1px solid var(--card-bg);
-            border-radius: 6px;
-            background: var(--card-bg);
-            transition: all 0.3s ease;
-        }
-
-        .social-links a:hover {
-            color: var(--accent);
-            border-color: var(--accent);
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--card-bg);
-            padding-bottom: 8px;
-            color: var(--accent);
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .card h3 {
-            margin-bottom: 5px;
-            font-size: 1.1rem;
-        }
-
-        .card span {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .skills-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .skill-badge {
-            background-color: var(--accent-glow);
-            color: var(--accent);
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            border: 1px solid rgba(56, 189, 248, 0.2);
-        }
-
-        footer {
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 60px;
-            border-top: 1px solid var(--card-bg);
-            padding-top: 20px;
-        }
-    </style>
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Insert Name]",
+    "jobTitle": "Senior Data Engineer",
+    "url": "https://aminulhaque-de.github.io/personal-profile/",
+    "sameAs": [
+      "https://www.linkedin.com/in/ask4amin",
+      "https://github.com/aminulhaque-de"
+    ],
+    "description": "[Insert professional summary/bio]"
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <div class="container">
-        <!-- Header Profile -->
-        <header>
-            <h1>Amin</h1>
-            <p>Senior Data Engineer | Python & Cloud Data Architect</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/ask4amin" target="_blank">LinkedIn</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="mailto:your.email@example.com">Contact Me</a>
-            </div>
-        </header>
+  <header class="site-header" role="banner" aria-label="Site header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <pre class="logo">[Insert Name]</pre>
+        <p class="title">Senior Data Engineer — [Insert Location]</p>
+      </div>
 
-        <!-- About Section -->
-        <section>
-            <h2>About Me</h2>
-            <div class="card">
-                <p>Results-driven Senior Data Engineer specializing in building scalable data pipelines, distributed data processing architectures, and high-performance cloud data warehouses. Expert in Python, Apache Airflow, Google Cloud Platform (Dataflow, BigQuery, Composer), and memory-efficient data optimization workflows.</p>
-            </div>
-        </section>
-
-        <!-- Technical Skills -->
-        <section>
-            <h2>Core Skills & Tech Stack</h2>
-            <div class="skills-grid">
-                <div class="skill-badge">Python</div>
-                <div class="skill-badge">SQL & BigQuery</div>
-                <div class="skill-badge">Apache Airflow 3.0</div>
-                <div class="skill-badge">GCP Dataflow</div>
-                <div class="skill-badge">Cloud Composer</div>
-                <div class="skill-badge">Pandas / NumPy</div>
-                <div class="skill-badge">ETL / ELT Architecture</div>
-                <div class="skill-badge">Git & CI/CD</div>
-            </div>
-        </section>
-
-        <!-- Professional Experience -->
-        <section>
-            <h2>Experience</h2>
-            
-            <div class="card">
-                <h3>Senior Data Engineer</h3>
-                <span>2023 – Present | Enterprise Data Solutions</span>
-                <p>Architecting robust batch and streaming pipelines handling terabytes of data daily using Google Cloud Platform, Apache Airflow, and optimized Python microservices.</p>
-            </div>
-
-            <div class="card">
-                <h3>Data Engineer</h3>
-                <span>2020 – 2023 | Data Tech Corp</span>
-                <p>Streamlined enterprise reporting frameworks by redesigning legacy SQL queries and building automated data quality verification pipelines.</p>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2026 Amin. Built for scale.</p>
-        </footer>
+      <nav class="social" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/ask4amin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <!-- simple SVG icon -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 4.98 8.5 2.5 2.5 0 0 1 4.98 3.5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-.9 1.7-1.9 3.6-1.9C20.9 8.8 22 11 22 14.5V21h-4v-6.2c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3V21H9z"/></svg>
+        </a>
+        <a href="https://github.com/aminulhaque-de" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.17c0 4.5 2.87 8.33 6.84 9.67.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.36-3.37-1.36-.45-1.17-1.11-1.48-1.11-1.48-.9-.62.07-.61.07-.61 1 0 1.54 1.04 1.54 1.04.88 1.55 2.31 1.1 2.87.84.09-.66.35-1.1.64-1.35-2.22-.26-4.55-1.13-4.55-5.03 0-1.11.39-2.01 1.03-2.72-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.04A9.3 9.3 0 0 1 12 6.8c.85.004 1.71.115 2.51.338 1.9-1.32 2.74-1.04 2.74-1.04.56 1.4.21 2.44.1 2.7.64.71 1.03 1.61 1.03 2.72 0 3.91-2.34 4.77-4.57 5.02.36.32.68.95.68 1.92 0 1.38-.01 2.5-.01 2.84 0 .27.18.59.69.49A10.17 10.17 0 0 0 22 12.17C22 6.58 17.52 2 12 2z"/></svg>
+        </a>
+        <a href="mailto:your.email@example.com" aria-label="Email">✉️</a>
+      </nav>
     </div>
+  </header>
 
+  <main id="main" class="wrap" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner card">
+        <h1 id="hero-heading" class="hero-title">[Insert Name]</h1>
+        <p class="hero-sub">Senior Data Engineer — Architecting reliable, scalable pipelines and cloud data platforms</p>
+        <p class="hero-summary">[Insert professional summary/bio]</p>
+
+        <div class="cta">
+          <a class="btn ghost" href="#projects">Featured Projects</a>
+          <a class="btn accent" href="https://www.linkedin.com/in/ask4amin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:your.email@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="section-heading">Core Skills & Tech Stack</h2>
+      <div class="card skills-grid" role="list">
+        <div class="skill-group" role="listitem">
+          <h3>Cloud</h3>
+          <ul>
+            <li class="badge">GCP (BigQuery, Dataflow, Composer)</li>
+            <li class="badge">AWS (S3, Redshift)</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" role="listitem">
+          <h3>Data Tools</h3>
+          <ul>
+            <li class="badge">Apache Airflow</li>
+            <li class="badge">dbt</li>
+            <li class="badge">Kafka</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" role="listitem">
+          <h3>Languages</h3>
+          <ul>
+            <li class="badge">Python</li>
+            <li class="badge">SQL</li>
+            <li class="badge">Bash</li>
+          </ul>
+        </div>
+
+        <div class="skill-group" role="listitem">
+          <h3>Data Engineering</h3>
+          <ul>
+            <li class="badge">ETL / ELT</li>
+            <li class="badge">Streaming & Batch</li>
+            <li class="badge">Data Modeling & DQ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading" class="section-heading">Professional Experience</h2>
+
+      <ol class="timeline" role="list">
+        <li class="timeline-item card">
+          <div class="time">
+            <time datetime="2023">2023 – Present</time>
+            <span class="company">Enterprise Data Solutions</span>
+          </div>
+          <div class="role">
+            <h3>Senior Data Engineer</h3>
+            <p>Architected resilient batch and streaming pipelines processing multiple TB/day. Designed cost-optimized BigQuery schemas and implemented Airflow DAGs with unit-tested operators—reducing pipeline failures by 45% and improving query performance by 3x.</p>
+          </div>
+        </li>
+
+        <li class="timeline-item card">
+          <div class="time">
+            <time datetime="2020">2020 – 2023</time>
+            <span class="company">Data Tech Corp</span>
+          </div>
+          <div class="role">
+            <h3>Data Engineer</h3>
+            <p>Led a migration of legacy ETL to cloud-native ELT processes, introduced data quality checks, and built CI/CD for data pipelines, enabling daily SLA-driven reports across 100+ datasets.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" class="section-heading">Featured Projects</h2>
+
+      <div class="cards-grid">
+        <article class="project card" aria-labelledby="proj-a">
+          <h3 id="proj-a">Scalable Streaming Ingestion Platform</h3>
+          <p class="muted">GCP, Dataflow, Pub/Sub, BigQuery</p>
+          <p>Built a fault-tolerant streaming ingestion pipeline that processed 500k events/min and reduced end-to-end latency by 70%. Implemented monitoring and backpressure handling.</p>
+          <p class="project-links">
+            <a href="https://github.com/aminulhaque-de/streaming-ingestion" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+          </p>
+        </article>
+
+        <article class="project card" aria-labelledby="proj-b">
+          <h3 id="proj-b">Warehouse Optimization & Cost Reduction</h3>
+          <p class="muted">BigQuery, dbt</p>
+          <p>Re-modeled star-schema and introduced partitioning/clustering to reduce query costs by 40% and shortened report runtime from hours to minutes.</p>
+          <p class="project-links">
+            <a href="https://github.com/aminulhaque-de/warehouse-optimization" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap card footer-inner">
+      <div>
+        <p><strong>[Insert Name]</strong> — Senior Data Engineer</p>
+        <p class="muted">Location: [Insert Location] • <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </div>
+      <div class="foot-links">
+        <p class="muted">© <span id="year"></span> [Insert Name]. Built for scale. Hosted on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small runtime: update year and accessible focus outline on keyboard navigation
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Add :focus-visible polyfill-ish behavior
+    (function(){
+      function handleFirstTab(e) {
+        if (e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', handleFirstTab);
+      }
+      window.addEventListener('keydown', handleFirstTab);
+    })();
+  </script>
 </body>
 </html>
