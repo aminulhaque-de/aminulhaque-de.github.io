@@ -2,14 +2,193 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Data Engineer | Portfolio</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f4f4f9; color: #333; }
-        h1 { font-size: 2.5em; }
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid var(--card-bg);
+            border-radius: 6px;
+            background: var(--card-bg);
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 8px;
+            color: var(--accent);
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .card span {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: var(--accent-glow);
+            color: var(--accent);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 60px;
+            border-top: 1px solid var(--card-bg);
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages.</p>
+
+    <div class="container">
+        <!-- Header Profile -->
+        <header>
+            <h1>Amin</h1>
+            <p>Senior Data Engineer | Python & Cloud Data Architect</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ask4amin" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="mailto:your.email@example.com">Contact Me</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <div class="card">
+                <p>Results-driven Senior Data Engineer specializing in building scalable data pipelines, distributed data processing architectures, and high-performance cloud data warehouses. Expert in Python, Apache Airflow, Google Cloud Platform (Dataflow, BigQuery, Composer), and memory-efficient data optimization workflows.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Core Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-badge">Python</div>
+                <div class="skill-badge">SQL & BigQuery</div>
+                <div class="skill-badge">Apache Airflow 3.0</div>
+                <div class="skill-badge">GCP Dataflow</div>
+                <div class="skill-badge">Cloud Composer</div>
+                <div class="skill-badge">Pandas / NumPy</div>
+                <div class="skill-badge">ETL / ELT Architecture</div>
+                <div class="skill-badge">Git & CI/CD</div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section>
+            <h2>Experience</h2>
+            
+            <div class="card">
+                <h3>Senior Data Engineer</h3>
+                <span>2023 – Present | Enterprise Data Solutions</span>
+                <p>Architecting robust batch and streaming pipelines handling terabytes of data daily using Google Cloud Platform, Apache Airflow, and optimized Python microservices.</p>
+            </div>
+
+            <div class="card">
+                <h3>Data Engineer</h3>
+                <span>2020 – 2023 | Data Tech Corp</span>
+                <p>Streamlined enterprise reporting frameworks by redesigning legacy SQL queries and building automated data quality verification pipelines.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Amin. Built for scale.</p>
+        </footer>
+    </div>
+
 </body>
 </html>
